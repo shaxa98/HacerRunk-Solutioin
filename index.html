@@ -8,13 +8,30 @@
   </head>
   <body>
     <h1 id="first" class="first">Hello Shaxzod</h1>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
   </body>
   <script>
-    //console.log(document.getElementsByTagName("h1"));
-    const sos = document.getElementById("first");
-    sos.innerHTML = "Hello Begzod";
+    //const sos = document.getElementById("first");
 
-    console.log(sos);
-    //document.getElementsByClassName("first"[0]);
+    // const sos = document.getElementsByTagName("h1");
+    // sos[0].innerHTML = "Hello Begzodddd";
+    // console.log(sos[0]);
+
+    const sos = document.getElementsByClassName("first")[0];
+    sos.innerHTML = "Hello by Class";
+    const number = document.getElementsByClassName("box");
+    //numbr[1].innerHTML = '1'
+    for (let i = 0; i <= number.length; i++) {
+      number[i].innerHTML = i + 1;
+    }
   </script>
 </html>
