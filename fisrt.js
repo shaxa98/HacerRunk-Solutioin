@@ -24,12 +24,13 @@
 function makeBox(number) {
   const divbox = '<div class="box"></div> ';
   console.log(divbox);
+  let result;
   for (let i = 0; i < number / 2; i++) {
-    //let result = divbox + divbox;
-    divbox += ;
+    result = divbox + divbox;
+
     //container[i].innerHTML = result;
-    console.log(result);
   }
+  console.log(result);
 }
 
 makeBox(10);
