@@ -54,13 +54,22 @@
 
     let container = document.getElementsByClassName("container");
     //container[0].innerHTML = '<div class="box"></div>';
-    let boxses = '<div class="box"></div>';
-    for (let i = 0; i <= 20; i++) {
-      //container[i].innerHTML = boxses;
-      //container[i].attribute = boxses;
-      //container.appendChild(boxses);
+    // let boxses = '<div class="box"></div>';
+    // for (let i = 0; i <= 20; i++) {
+    //container[i].innerHTML = boxses;
+    //container[i].attribute = boxses;
+    //container.appendChild(boxses);
+    //}
+    function makeBox(number) {
+      let arr = [];
+      for (let i = 0; i < number; i++) {
+        let name = '<div class="box"></div>';
+        arr = name;
+        console.log(arr);
+        container[i].innerHTML = ;
+      }
     }
 
-    console.log(container);
+    makeBox(20);
   </script>
 </html>
