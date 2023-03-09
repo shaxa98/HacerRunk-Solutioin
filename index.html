@@ -23,6 +23,7 @@
   <body>
     <h1 id="first" class="first">Hello Shaxzod</h1>
     <div class="container">
+      <!-- <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
@@ -31,8 +32,7 @@
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="box"></div> -->
     </div>
   </body>
   <script>
@@ -60,17 +60,14 @@
     //container.appendChild(boxses);
     //}
     function makeBox(number) {
-      let arr = [];
-      for (let i = 0; i < number; i++) {
-        let name = '<div class="box"></div>';
-        let result = arr.push(name);
-      }
-      console.log(result);
-      container.innerHTML = arr;
-    }
-
-    makeBox(20);
-
-
-  </script>
+  const divbox = '<div class="box"></div> ';
+  let result = '';
+  for (let i = 0; i < number; i++) {
+    result = result + divbox;
+}
+   container[0].innerHTML = result;
+  console.log(result);
+}
+makeBox(20);
+ </script>
 </html>

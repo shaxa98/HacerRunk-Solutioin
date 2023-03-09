@@ -25,12 +25,12 @@ function makeBox(number) {
   const divbox = '<div class="box"></div> ';
 
   let result;
-  for (let i = 0; i < number / 2; i++) {
-    result = divbox + divbox;
+  for (let i = 0; i < number; i++) {
+    result = result + divbox;
 
     //container[i].innerHTML = result;
-    console.log(result);
   }
+  console.log(result);
 }
 
 makeBox(10);
