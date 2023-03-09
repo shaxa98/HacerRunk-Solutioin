@@ -21,3 +21,14 @@
 //     return target;
 //   }, []);
 // }
+function makeBox(number) {
+  for (let i = 0; i < number; i++) {
+    let divbox = '<div class="box"></div>';
+    divbox++;
+
+    //container[i].innerHTML = result;
+    console.log(divbox);
+  }
+}
+
+makeBox(10);

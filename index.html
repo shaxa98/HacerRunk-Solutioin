@@ -63,10 +63,10 @@
       let arr = [];
       for (let i = 0; i < number; i++) {
         let name = '<div class="box"></div>';
-        arr = name;
-        console.log(arr);
-        // container[i].innerHTML = ;
+        let result = arr.push(name);
       }
+      console.log(result);
+      container.innerHTML = arr;
     }
 
     makeBox(20);
